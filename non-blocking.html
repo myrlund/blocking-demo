@@ -1,0 +1,12 @@
+<head>
+  <script src="/slow.js" async></script>
+  <script src="/fast.js" async></script>
+<head>
+<body>
+  <p id="text"></p>
+
+  <script>
+    var text = document.querySelector("#text");
+    setInterval(() => text.innerText += " not blocked", 100);
+  </script>
+</body>
